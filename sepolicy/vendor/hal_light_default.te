@@ -1,0 +1,5 @@
+# Lights HAL resolves /sys/class/leds/* into the SPMI PMIC devices, so it has to
+# traverse spmi0-00 (sysfs_spmi_dev) before it reaches the sysfs_leds nodes.
+allow hal_light_default sysfs_spmi_dev:dir search;
+r_dir_file(hal_light_default, sysfs_leds)
+allow hal_light_default sysfs_leds:file rw_file_perms;

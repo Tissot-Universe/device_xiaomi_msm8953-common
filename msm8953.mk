@@ -188,7 +188,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
+    android.hardware.lights-service.xiaomi_msm8953
 
 # Lineage Health
 PRODUCT_PACKAGES += \
