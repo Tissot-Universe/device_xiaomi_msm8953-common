@@ -62,8 +62,10 @@ Lights::Lights() {
 
     mBacklightNode = !access(kLCDFile.c_str(), F_OK) ? kLCDFile : kLCDFile2;
     mButtonExists = !access(kButtonFile.c_str(), F_OK);
-    mWhiteLed = !!access((led_paths[GREEN] + "brightness").c_str(), W_OK);
-    LED_UseRedAsWhite = mWhiteLed && !access((led_paths[RED] + "brightness").c_str(), F_OK);
+    bool hasWhite = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
+    bool hasGreen = !access((led_paths[GREEN] + "brightness").c_str(), W_OK);
+    mWhiteLed = hasWhite || !hasGreen;
+    LED_UseRedAsWhite = mWhiteLed && !hasWhite && !access((led_paths[RED] + "brightness").c_str(), F_OK);
     if (LED_UseRedAsWhite)
         mBreath = (!access(((LED_UseRedAsWhite ? led_paths[RED] : led_paths[WHITE]) + "blink").c_str(), W_OK) || !access(((LED_UseRedAsWhite ? led_paths[RED] : led_paths[WHITE]) + "breath").c_str(), W_OK));
     else
