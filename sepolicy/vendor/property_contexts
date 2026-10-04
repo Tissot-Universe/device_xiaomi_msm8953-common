@@ -30,6 +30,9 @@ audio.chk.cal.us                u:object_r:vendor_audio_prop:s0
 # Data / Telephony
 persist.vendor.data.            u:object_r:vendor_radio_prop:s0
 
+# Dirac
+persist.audio.dirac.       u:object_r:dirac_prop:s0
+
 # Thermal engine
 persist.sys.thermal.            u:object_r:thermal_engine_prop:s0
 sys.thermal.                    u:object_r:thermal_engine_prop:s0
