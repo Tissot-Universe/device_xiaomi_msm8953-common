@@ -13,12 +13,14 @@ vendor/lib/libfastcvadsp_stub.so|886e33a28a32f6a143081ab07deb186fd379408f
 vendor/lib/libfastcvopt.so|88c9301642acfc619cae94fc4839a3c1075e826f
 vendor/lib/libmdsprpc.so|1e18d90f9955a4bcb89aabf5c1836793e07de7ff
 vendor/lib/libsdsprpc.so|b7d1c791ccbe407278eaf407448fcaae9efd2f4a
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|b6f474e60c482479b0d022111d376e1c9f1062ea
 vendor/lib64/libadsp_default_listener.so|3ebcf635d6cdc447b8ecd40ea76bda39bf82c308
 vendor/lib64/libadsprpc.so|b61f1875c78c69fd9d466515f3f4eaf12be8ac94
 vendor/lib64/libfastcvadsp_stub.so|a7dd1371e6f8f888d3a411cbbc6778c6a0271984
 vendor/lib64/libfastcvopt.so|288261cba728a1865d527a129086a1073fc8a80c
 vendor/lib64/libmdsprpc.so|9bba60b57b783a6690154c6993ead42e304ac39a
 vendor/lib64/libsdsprpc.so|81cfda69ad68cf09bf15fc317582d8a5f72a47f8
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
 
 # ADSP modules
 vendor/lib/rfsa/adsp/dirac_resource.dar|d9b3693eab8c520ef859236b8235752188b7cba0
