@@ -30,10 +30,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi      u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.xiaomi                u:object_r:hal_lineage_touch_default_exec:s0
 
-# Input devices
-/(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:vendor_idc_file:s0
-/(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:vendor_keylayout_file:s0
-
 # Ir
 /dev/peel_ir					u:object_r:lirc_device:s0
 /dev/spidev5\.1					u:object_r:lirc_device:s0
@@ -55,3 +51,8 @@
 
 # Time
 /(vendor|system/vendor)/bin/timekeep                                          u:object_r:timekeep_exec:s0
+
+# SELinux
+/(vendor|system/vendor)/etc/selinux/odm_seapp_contexts                        u:object_r:seapp_contexts_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_seapp_contexts                     u:object_r:seapp_contexts_file:s0
+

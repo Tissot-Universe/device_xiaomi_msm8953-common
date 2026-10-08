@@ -1,2 +1,19 @@
 user=radio seinfo=platform name=com.qti.dpmserviceapp domain=vendor_dataservice_app type=radio_data_file
+user=radio seinfo=default name=com.qti.dpmserviceapp domain=vendor_dataservice_app type=radio_data_file
+user=radio seinfo=default name=.dataservices domain=vendor_dataservice_app type=radio_data_file
+user=_app seinfo=default name=.qtidataservices domain=qtidataservices_app type=app_data_file levelFrom=all
+user=network_stack seinfo=default domain=network_stack type=radio_data_file
+user=radio seinfo=default domain=radio type=radio_data_file
+user=system seinfo=default domain=system_app type=system_app_data_file
+user=bluetooth seinfo=default domain=bluetooth type=bluetooth_data_file
+user=nfc seinfo=default domain=nfc type=nfc_data_file
+user=secure_element seinfo=default domain=secure_element levelFrom=all
 user=_app isPrivApp=true name=com.android.systemui domain=platform_app type=app_data_file levelFrom=user
+user=_app seinfo=default isPrivApp=true name=com.android.permissioncontroller domain=permissioncontroller_app type=privapp_data_file levelFrom=all
+user=_app seinfo=default isPrivApp=true name=com.android.permissioncontroller:* domain=permissioncontroller_app type=privapp_data_file levelFrom=all
+user=_app seinfo=default isPrivApp=true name=com.android.providers.media.module domain=mediaprovider_app type=privapp_data_file levelFrom=all
+user=_app seinfo=default isPrivApp=true name=com.android.providers.media.module:* domain=mediaprovider_app type=privapp_data_file levelFrom=all
+user=_app isPrivApp=true name=com.android.cellbroadcastreceiver.module domain=platform_app type=privapp_data_file levelFrom=all
+user=_app isPrivApp=true name=com.android.cellbroadcastreceiver.module:* domain=platform_app type=privapp_data_file levelFrom=all
+user=_app isPrivApp=true name=com.android.cellbroadcastreceiver domain=platform_app type=privapp_data_file levelFrom=all
+user=_app isPrivApp=true name=com.android.cellbroadcastreceiver:* domain=platform_app type=privapp_data_file levelFrom=all
