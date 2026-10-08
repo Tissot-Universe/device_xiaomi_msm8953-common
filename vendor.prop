@@ -188,3 +188,6 @@ ro.hw_timeout_multiplier=3
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Fwk detect
+ro.vendor.qti.va_odm.support=1
