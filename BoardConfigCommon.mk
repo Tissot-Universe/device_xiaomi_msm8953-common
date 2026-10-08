@@ -6,6 +6,8 @@
 
 COMMON_PATH := device/xiaomi/msm8953-common
 
+WITH_ADB_INSECURE := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
